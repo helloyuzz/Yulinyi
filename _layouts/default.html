@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}" class="h-100">
+{% include head.html %}
+
+<body>
+  <div class="container-fluid">
+      {% for post in site.posts %}
+      <div class="row mt-2">
+        <span class="fs-5">{{ post.date | date: "%Y-%m-%d" }} {{ post.title }}</span>      
+        <hr class="mt-1 mb-1">
+        <div>
+          {{ post.content }}
+        </div>
+      </div>
+      {% break %}
+      {% endfor %}
+    <div class="row">
+      {%- include footer.html -%}
+    </div>
+  </div>
+  </div>
+  {% include script.html %}
+</body>
+
+</html>
