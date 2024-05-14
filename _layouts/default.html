@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <div class="PageNavigation">
+      <div class="PageNavigation mb-3">
         {% if post.previous %}
             <a class="prev" href="{{post.previous.url}}">后一篇: {{post.previous.title}}</a>
         {% endif %}
@@ -21,7 +21,6 @@
             <a class="next" href="{{post.next.url}}">前一篇：{{post.next.title}} &raquo;</a>
         {% endif %}
     </div>
-
       {% break %}
       {% endfor %}
     <div class="row">
