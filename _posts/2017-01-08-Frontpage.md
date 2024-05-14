@@ -1,7 +1,4 @@
 ---
-title: 'Jekyllrb Blog'
-frontpage: 'true'
-published: false
 layout: post
 ---
    
