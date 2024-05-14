@@ -1,34 +1,4 @@
 <div class="container-fluid text-center">
   <hr class="m-0 mb-2">
-  <span>{{ site.title }} Copyright @ {{ "now" | date:'%Y'}} All Right Reserved.</span>
+  <span><a href="/">{{ site.title }}</a> Copyright @ {{ "now" | date:'%Y'}} All Right Reserved.</span>
 </div>
-
-<!-- 
-  &copy;{{ site.author | escape }}
-  <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-  <div class="wrapper">
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li></li>
-            {%- endif -%}
-        </ul>
-      </div>      
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
-  </div>
-</footer> -->
